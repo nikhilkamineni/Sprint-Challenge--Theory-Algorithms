@@ -118,3 +118,8 @@ See attached .png file.
       else try f = n - ( f/2 )
     Keep going until you find state change from broken to not broken and you can't halve the floors anymore
     ```
+
+### Excercise III
+
+* a: O(n^2). Quicksort performs worst when the array is already sorted and the first (or last if sorted descending) element is chosen as pivot. This is because one of the initial partitions is guaranteed to be the (array.length - 1), as will subsequent recursive calls on that partition.
+* b: O(n log n). This is because the median pivot will create two equal partitions and each recursive call will process a partion half the previous size.
